@@ -1,0 +1,40 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url('../img/alaska1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50em;
+  position: relative;
+}
+
+.nav-items {
+  text-decoration: none;
+  color: white;
+  float: right;
+  display: inline;
+  position: absolute;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 2em;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.gallery img {
+  height: 20em;
+  width: 20em;
+  margin: 0;
+}
