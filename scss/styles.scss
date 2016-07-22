@@ -7,51 +7,61 @@ body {
   font-family: 'Fjalla One', sans-serif;
 }
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-image: url('../img/alaska1.jpg');
+  background-image: url('../img/bigbear.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 970px;
+  margin: 0 auto;
+  height: 51px;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 .header {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 
-.nav-items {
-  text-decoration: none;
-  color: white;
-  float: right;
-  display: inline;
-  position: absolute;
+
+
+.title {
+  font-size: 90px;
+  text-align: center;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  padding: 2em;
+  font-size: 1.5em;
 }
+
+a:hover {
+  color: orange;
+}
+
 .gallery {
   display: flex;
   flex-direction: column;
+
 }
 
 .gallery-top, .gallery-bottom {
   display: flex;
-  text-align: center;
-
-
 }
 
 .gallery-image {
@@ -70,37 +80,62 @@ body {
 .item1 {
   background-image: url('../img/gallery1.jpg');
   background-position: bottom;
+  position: relative;
 }
 
 .item2 {
   background-image: url("../img/gallery2.jpg");
+  position: relative;
 }
 
 .item3 {
   background-image: url('../img/gallery3.jpg');
+  position: relative;
 }
 
 .item4 {
   background-image: url("../img/gallery4.jpg");
+  position: relative;
   background-position: bottom;
 }
 
 .item5 {
-  background-image: url('../img/gallery5.jpg');
+  background-image: url('../img/gallery7.jpg');
+  position: relative;
   background-position: right;
 }
 
 .item6 {
   background-image: url("../img/gallery6.jpg");
+  position: relative;
   background-position: center;
 }
 
 .gallery img {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
   background-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.4);
   color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
-  // padding: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1);
+  transition: transform 2 ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(2);
+}
+.gallery p {
+  color: white;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  font-weight: bold;
+}
+
+.gallery p:hover {
+  color: orange;
 }
