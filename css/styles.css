@@ -116,11 +116,23 @@ body {
   color: orange; }
 
 @media screen and (max-width: 650px) {
-  .gallery p {
-    display: none; }
-
-  ul {
+  .gallery {
+    display: flex;
     flex-direction: column;
-    text-align: center; } }
+    flex-wrap: wrap; }
+
+  .gallery-top, .gallery-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+
+  .gallery-image {
+    width: 100vw;
+    height: 300px; }
+
+  .navigation a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; } }
 
 /*# sourceMappingURL=styles.css.map */
