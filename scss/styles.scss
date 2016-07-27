@@ -6,6 +6,7 @@ padding: 0;
 body {
   font-family: 'Fjalla One', sans-serif;
 }
+
 .navbar {
   background-image: url("../img/bear.jpeg");
   background-repeat: no-repeat;
@@ -14,15 +15,23 @@ body {
   height: 100vh;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  width: 970px;
-  margin: 0 auto;
-  height: 51px;
-  text-decoration: none;
-  list-style-type: none;
+ .navigation {
+   display: flex;
   justify-content: space-between;
+  height: 3em;
+  background-color: steelblue;
+ }
+
+ .navigation a {
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   padding: 5px;
+}
+
+.navigation a:hover {
+  color: orange;
 }
 
 .header {
@@ -39,21 +48,11 @@ ul {
 }
 
 
-
 .title {
   font-size: 90px;
   text-align: center;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5em;
-}
-
-a:hover {
-  color: orange;
-}
 
 .gallery {
   display: flex;

@@ -12,15 +12,21 @@ body {
   background-position: bottom;
   height: 100vh; }
 
-ul {
+.navigation {
   display: flex;
-  flex-direction: row;
-  width: 970px;
-  margin: 0 auto;
-  height: 51px;
+  justify-content: space-between;
+  height: 3em;
+  background-color: steelblue; }
+
+.navigation a {
   text-decoration: none;
-  list-style-type: none;
-  justify-content: space-between; }
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px; }
+
+.navigation a:hover {
+  color: orange; }
 
 .header {
   position: absolute;
@@ -37,14 +43,6 @@ ul {
 .title {
   font-size: 90px;
   text-align: center; }
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5em; }
-
-a:hover {
-  color: orange; }
 
 .gallery {
   display: flex;
